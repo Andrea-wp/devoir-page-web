@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ma Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Barre de navigation */
+    .navbar {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Mise en page principale */
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    .left-block {
+      flex: 2;
+      background-color: #f2f2f2;
+      height: 300px;
+      margin-right: 20px;
+      padding: 10px;
+    }
+
+    .right-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Nom + Image côte à côte, avec grand écart */
+    .top-row {
+      display: flex;
+      gap: 50px; /* Large espacement ici */
+      align-items: flex-start;
+    }
+
+    .info-box {
+      background-color: #eaeaea;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 200px;
+      box-sizing: border-box;
+    }
+
+    .image-box {
+      background-color: #eaeaea;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 120px;
+      height: auto;
+      box-sizing: border-box;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .description-box {
+      background-color: #eaeaea;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li>Chaps</li>
+        <li>Chapo</li>
+        <li>Chap1</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Bloc gauche -->
+    <div class="left-block">
+      <p>Contenu principal ici</p>
+    </div>
+
+    <!-- Bloc droite -->
+    <div class="right-block">
+      <!-- Cadres séparés avec grand espacement -->
+      <div class="top-row">
+        <div class="info-box">
+          <p><strong>Nom</strong> : SIKADI YOPA</p>
+          <p><strong>Prénom</strong> : ANDREA</p>
+          <p><strong>Matricule</strong> : 24H2211</p>
+        </div>
+        <div class="image-box">
+          <img src="Image 2025-04-10 à 11.31.50_722f47d3.jpg" alt="Image">
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="description-box">
+        <p>Description : étudiante en ICT et passionné par l’informatique</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
